@@ -2,7 +2,7 @@ This is a sample of using React, React Router, and Redux with TypeScript. I have
 and not everything is fully typed, just a few things here and there with basic types. I just wanted to
 get things up and running with .tsx files.
 
-This is hosted at [https://fakebook-example.netlify.com](https://fakebook-example.netlify.com)
+This is hosted at [https://fakebook-example.netlify.com](https://fakebook-example.netlify.com).
 
 
 To build this project locally:
