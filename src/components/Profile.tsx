@@ -20,10 +20,12 @@ class Profile extends React.Component<any, any> {
         that.setState({posts})
     })(this)
 
+
     renderPosts = (posts: any) => posts.map((post: any, idx: number) => {
         console.log('tried render')
         return <Post data={post} key={idx} toggle={this.toggle} />
     })
+
 
     // this was mostly copied from the getPosts() actionCreator,
     // this is not the most optimal way of doing this as all of
@@ -50,8 +52,7 @@ class Profile extends React.Component<any, any> {
     //    because it does require more than a shallow comparison.
     //    https://reactjs.org/docs/react-api.html
 
-    async componentDidMount() {
-        let user = this.props.match.params.id
+    getProfileData = async (user: any) => {
         let url = `https://jsonplaceholder.typicode.com/users/${user}`
         let data = await fetch(url).then(response => response.json())
         let photoUrl = `https://jsonplaceholder.typicode.com/photos/${user}`
@@ -108,6 +109,17 @@ class Profile extends React.Component<any, any> {
 
         this.setState(Object.assign({}, data))
     }
+
+
+    componentWillReceiveProps(nextProps: any) {
+        this.getProfileData(nextProps.match.params.id)
+    }
+
+
+    async componentDidMount() {
+        this.getProfileData(this.props.match.params.id)
+    }
+
 
     public render() {
         console.log('state: ', this.state)
