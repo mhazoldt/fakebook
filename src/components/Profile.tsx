@@ -14,7 +14,7 @@ class Profile extends React.Component<any, any> {
         posts = posts.map((post: any) => {
             post.commentsVisible = (id === post.id) ?
                 !post.commentsVisible :
-                post.comments.Visible
+                post.commentsVisible
             return post
         })
         that.setState({posts})
