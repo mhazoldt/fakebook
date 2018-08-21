@@ -4,8 +4,6 @@ get things up and running with .tsx files.
 
 This is hosted at [https://fakebook-example.netlify.com](https://fakebook-example.netlify.com)
 
-This is only a static host so you have to go the base URL first, aka https://fakebook-example.netlify.com,
-not something like https://fakebook-example.netlify.com/profile/1.
 
 To build this project locally:
 
