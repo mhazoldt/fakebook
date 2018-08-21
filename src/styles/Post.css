@@ -1,0 +1,31 @@
+
+.profile-picture {
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.profile-picture-container {
+    width: 8%;
+    min-width: 40px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.username-title {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.username {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.username-link {
+    color: black;
+}
