@@ -3,3 +3,45 @@
     flex-flow: row nowrap;
     align-items: center;
 }
+
+.desktop-nav {
+    display: block;
+    visibility: visible;
+}
+
+.mobile-nav {
+    display: none;
+    visibility: hidden;
+}
+
+.mobile-nav-links {
+    display: none;
+    visibility: hidden;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .desktop-nav {
+        display: none;
+        visibility: hidden;
+    }
+
+    .mobile-nav {
+        display: block;
+        visibility: visible;
+    }
+
+    .mobile-nav-links {
+        display: block;
+        position: relative;
+        visibility: visible;
+        width: 100%;
+        background-color: rgb(33, 150, 243, 0.8);
+        z-index: 10;
+    }
+
+    .mobile-nav-link {
+        border-top: 1px solid white;
+    }
+}
