@@ -11,7 +11,7 @@ class Header extends React.Component {
       <div>
         <div className="desktop-nav">
           <nav>
-            <div className="nav-wrapper blue hide-on-med-and-down">
+            <div className="nav-wrapper blue">
               <div className="container">
                 <a className="brand-logo"><i className="material-icons">people</i>Fakebook</a>
                 <ul id="nav-mobile" className="right hide-on-med-and-down">

@@ -26,7 +26,7 @@ class Profile extends React.Component<any, any> {
         return <Post data={post} key={idx} toggle={this.toggle} />
     })
 
-
+    
     // this was mostly copied from the getPosts() actionCreator,
     // this is not the most optimal way of doing this as all of
     // the API data could have been loaded into a BaseLayout section
@@ -154,5 +154,6 @@ class Profile extends React.Component<any, any> {
         );
     }
 }
+
 
 export default Profile;
