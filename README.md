@@ -16,7 +16,7 @@ npm install create-react-app --global
 ```
 git clone https://github.com/mhazoldt/fakebook.git
 ```
-4. Install dependencies. This needs to be run from folder that the repository was cloned to.
+4. Install dependencies. This needs to be run from the folder that the repository was cloned to.
 ```
 npm install
 ```
